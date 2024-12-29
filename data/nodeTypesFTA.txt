@@ -1,0 +1,5 @@
+B shape=circle, color=lightgreen, style= filled
+G shape=box, 
+A shape=box, color=lightgray, style=filled
+O shape=box, color=lightgray, style=filled
+U shape=diamond, color=lightgreen, style=filled

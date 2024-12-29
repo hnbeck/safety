@@ -1,0 +1,57 @@
+G1 <#$ All unacceptable behavioral risks <br/>in ODD are mitigated    >
+S1 <#$ Over all sources of behavioral <br/> risks in ODD >
+
+G11 <#$ Model of sources of behavioral <br/> risks in ODD is complete>
+S11 <#$ Over TSP and Action Set model>
+G111 <#$ TSP model describe all sources <br/> of risks of perception in ODD>
+G112 <#$ Action Set model describes all <br/> sources of risks of action in ODD >
+ 
+G12 <#$ Modeled sources of behavioral <br/> risks in ODD are mitigated>
+S12 <#$ Over TSP and Action Set>
+
+G121 <#$ TSP related capabilites are always <br/> available during driving task>
+S121 <#$ Over TSP related capabilites>
+G1211 <#$ Internal States always support <br/> capabilites during  driving task>
+G1212 <#$ Capabilites for aquisition by channel <br/> is valid during  driving task>
+
+G122 <#$ Action Set not empty any time <br/> during driving task>
+S122 <#$ Over Action Set related capabilites>
+
+G1221 <#$ Internal States always support <br/> Action Set during  driving task>
+G1222 <#$ Channels for actions <br/> are always available during driving task>
+G1223 <#$ Risk minimal state  is <br/> always posiible vailable during driving task>
+
+G13 <#$ All triggering events are mitigated>
+S13 <#$ Over all channels>
+G131 <#$ Visual channels <br/>are functional>
+G132 <#$ Acoustic channels <br/>are functional>
+G133 <#$ Mecanic channels <br/>are functional>
+G134 <#$ Radiation channels <br/>are functional>
+
+G1 -> S1
+S1 -> G11
+S1 -> G12
+S1 -> G13
+G11 -> S11
+G12 -> S12
+G13 -> S13
+
+S11 -> G111
+S11 -> G112
+
+S12 -> G121
+S12 -> G122
+
+S13 -> G131
+S13 -> G132
+S13 -> G133
+S13 -> G134
+
+G121 -> S121
+S121 -> G1211
+S121 -> G1212
+
+G122 -> S122
+S122 -> G1221
+S122 -> G1222
+S122 -> G1223

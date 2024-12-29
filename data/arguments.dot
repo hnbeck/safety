@@ -1,0 +1,12 @@
+ digraph Case {
+    G01 [shape=box, label = <Safety function<br/> is safe >, color = royalblue1, style=filled];
+    S01 [shape = polygon, sides = 4, skew = 0.2, label = "Creation is safe", color =yellow, style = filled];
+    G01 -> S01; 
+    G02 [shape=box, label = "Organisation ok",  color = royalblue1, style=filled];
+    G03 [shape=box, label="Engineering ok", color = royalblue1, style=filled];
+    S01 -> G02; 
+    S01 -> G03; 
+   E01 [label = "safety case", shape = circle, color = lightgreen, style = filled];
+  G02 -> E01; 
+
+}

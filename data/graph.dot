@@ -1,0 +1,48 @@
+digraph myGraph
+{
+G1    [label =  <<b>G1   </b><br/> All unacceptable behavioral risks <br/>in ODD are mitigated    >,  shape=box, color=royalblue1, style=filled];
+S1    [label =  <<b>S1   </b><br/> Over all sources of behavioral <br/> risks in ODD >,  shape=polygon, sides=4, skew=0.14, margin="0.001, 0.001", color=yellow, style=filled];
+G11   [label =  <<b>G11  </b><br/> Model of sources of behavioral <br/> risks in ODD is complete>,  shape=box, color=royalblue1, style=filled];
+S11   [label =  <<b>S11  </b><br/> Over TSP and Action Set model>,  shape=polygon, sides=4, skew=0.14, margin="0.001, 0.001", color=yellow, style=filled];
+G111  [label =  <<b>G111 </b><br/> TSP model describe all sources <br/> of risks of perception in ODD>,  shape=box, color=royalblue1, style=filled];
+G112  [label =  <<b>G112 </b><br/> Action Set model describes all <br/> sources of risks of action in ODD >,  shape=box, color=royalblue1, style=filled];
+G12   [label =  <<b>G12  </b><br/> Modeled sources of behavioral <br/> risks in ODD are mitigated>,  shape=box, color=royalblue1, style=filled];
+S12   [label =  <<b>S12  </b><br/> Over TSP and Action Set>,  shape=polygon, sides=4, skew=0.14, margin="0.001, 0.001", color=yellow, style=filled];
+G121  [label =  <<b>G121 </b><br/> TSP related capabilites are always <br/> available during driving task>,  shape=box, color=royalblue1, style=filled];
+S121  [label =  <<b>S121 </b><br/> Over TSP related capabilites>,  shape=polygon, sides=4, skew=0.14, margin="0.001, 0.001", color=yellow, style=filled];
+G1211 [label =  <<b>G1211</b><br/> Internal States always support <br/> capabilites during  driving task>,  shape=box, color=royalblue1, style=filled];
+G1212 [label =  <<b>G1212</b><br/> Capabilites for aquisition by channel <br/> is valid during  driving task>,  shape=box, color=royalblue1, style=filled];
+G122  [label =  <<b>G122 </b><br/> Action Set not empty any time <br/> during driving task>,  shape=box, color=royalblue1, style=filled];
+S122  [label =  <<b>S122 </b><br/> Over Action Set related capabilites>,  shape=polygon, sides=4, skew=0.14, margin="0.001, 0.001", color=yellow, style=filled];
+G1221 [label =  <<b>G1221</b><br/> Internal States always support <br/> Action Set during  driving task>,  shape=box, color=royalblue1, style=filled];
+G1222 [label =  <<b>G1222</b><br/> Channels for actions <br/> are always available during driving task>,  shape=box, color=royalblue1, style=filled];
+G1223 [label =  <<b>G1223</b><br/> Risk minimal state  is <br/> always posiible vailable during driving task>,  shape=box, color=royalblue1, style=filled];
+G13   [label =  <<b>G13  </b><br/> All triggering events are mitigated>,  shape=box, color=royalblue1, style=filled];
+S13   [label =  <<b>S13  </b><br/> Over all channels>,  shape=polygon, sides=4, skew=0.14, margin="0.001, 0.001", color=yellow, style=filled];
+G131  [label =  <<b>G131 </b><br/> Visual channels <br/>are functional>,  shape=box, color=royalblue1, style=filled];
+G132  [label =  <<b>G132 </b><br/> Acoustic channels <br/>are functional>,  shape=box, color=royalblue1, style=filled];
+G133  [label =  <<b>G133 </b><br/> Mecanic channels <br/>are functional>,  shape=box, color=royalblue1, style=filled];
+G134  [label =  <<b>G134 </b><br/> Radiation channels <br/>are functional>,  shape=box, color=royalblue1, style=filled];
+G1    -> S1;
+   S1    -> G11;
+  S1    -> G12;
+  S1    -> G13;
+  G11   -> S11;
+  G12   -> S12;
+  G13   -> S13;
+  S11   -> G111;
+ S11   -> G112;
+ S12   -> G121;
+ S12   -> G122;
+ S13   -> G131;
+ S13   -> G132;
+ S13   -> G133;
+ S13   -> G134;
+ G121  -> S121;
+ S121  -> G1211;
+S121  -> G1212;
+G122  -> S122;
+ S122  -> G1221;
+S122  -> G1222;
+S122  -> G1223;
+}

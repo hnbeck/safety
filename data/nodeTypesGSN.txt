@@ -1,0 +1,4 @@
+G0 shape=box, color=royalblue1, fillcolor=royalblue1, style=filled
+J0 shape=box, color=white, fillcolor=lightgreen, style=filled
+S0 shape=polygon, sides=4, skew=0.14, margin="0.001, 0.001", color=yellow, fillcolor=yellow, style=filled
+E0 shape=circle, color=lightgreen, fillcolor=lightgreen, style=filled

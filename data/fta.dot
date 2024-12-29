@@ -1,0 +1,19 @@
+digraph myGraph
+{
+rankdir=BT;
+G0 [label =  < Unerwünschtes Ereignis <b>G0</b><br/>>,  shape=box,];
+A0 [label =  < &amp;>,  shape=box, color=lightgray, style=filled];
+O0 [label =  < &le; >,  shape=box, color=lightgray, style=filled];
+G1 [label =  < Single Fault  <b>G1</b><br/>>,  shape=box,];
+G2 [label =  <Residual Fault <b>G2</b><br/>>,  shape=box,];
+G3 [label =  <Multipoint Fault <b>G3</b><br/>>,  shape=box,];
+G4 [label =  <Detection Fault <b>G4</b><br/>>,  shape=box,];
+G5 [label =  <Detection Time <b>G5</b><br/>>,  shape=box,];
+A0 -> G0;
+   G1 -> A0;
+   G2 -> A0;
+   G3 -> A0;
+      O0 -> G3;
+   G4 -> O0;
+   G5 -> O0;
+}

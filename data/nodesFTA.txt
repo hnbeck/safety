@@ -1,0 +1,17 @@
+G0 < Unerwünschtes Ereignis $#>
+A0 < &amp;>
+O0 < &le;1 >
+G1 < Single Fault  $#>
+G2 <Residual Fault $#>
+G3 <Multipoint Fault $#>
+G4 <Detection Fault $#>
+G5 <Detection Time $#>
+
+A0 -> G0
+G1 -> A0
+G2 -> A0
+G3 -> A0
+O0 -> G3
+G4 -> O0
+G5 -> O0
+
